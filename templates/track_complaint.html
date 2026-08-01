@@ -1,0 +1,57 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Track Complaint</title>
+
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>Track Complaint</h1>
+
+    <form method="POST">
+        {% csrf_token %}
+
+        <label><strong>Complaint ID:</strong></label><br><br>
+
+        <input type="text" name="complaint_id" placeholder="Enter Complaint ID" required>
+
+        <button type="submit">Track</button>
+    </form>
+
+    {% if complaint %}
+
+    <div class="details">
+
+        <h2>Complaint Details</h2>
+
+        <p><strong>Complaint ID:</strong> {{ complaint.complaint_id }}</p>
+
+        <p><strong>Name:</strong> {{ complaint.name }}</p>
+
+        <p><strong>Subject:</strong> {{ complaint.subject }}</p>
+
+        <p>
+            <strong>Status:</strong>
+            <span class="status">{{ complaint.status }}</span>
+        </p>
+
+    </div>
+
+    {% elif request.method == "POST" %}
+
+    <p style="color:red; font-weight:bold; margin-top:20px;">
+        ❌ Complaint not found.
+    </p>
+
+    {% endif %}
+
+</div>
+
+</body>
+</html>

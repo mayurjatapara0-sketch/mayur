@@ -1,0 +1,132 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Complaint Management System</title>
+
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+
+<body>
+
+<!-- Navbar -->
+
+<nav class="navbar">
+
+    <div class="logo">
+        DCMS
+    </div>
+
+    <ul class="nav-links">
+        <li><a href="/">Home</a></li>
+        <li><a href="/register/">Register Complaint</a></li>
+        <li><a href="/track/">Track Complaint</a></li>
+        <li><a href="/admin/">Admin</a></li>
+    </ul>
+
+</nav>
+
+
+<!-- Hero Section -->
+
+<section class="hero">
+
+    <div class="hero-text">
+
+        <h1>
+            Digital Complaint<br>
+            Management System
+        </h1>
+
+        <p>
+            Submit your complaint easily, track its status,
+            and receive updates through one simple and secure platform.
+        </p>
+
+        <div class="buttons">
+
+            <a href="/register/" class="btn btn-white">
+                Register Complaint
+            </a>
+
+            <a href="/track/" class="btn btn-orange">
+                Track Complaint
+            </a>
+
+        </div>
+
+    </div>
+
+    <div class="hero-image">
+
+        <img src="{% static 'images/complaint.png' %}" alt="Complaint">
+
+    </div>
+
+</section>
+
+
+<!-- Services -->
+
+<section class="services">
+
+    <h2>Our Services</h2>
+
+    <p class="subtitle">
+        A simple, fast, and organized way to manage complaints.
+    </p>
+
+    <div class="cards">
+
+        <div class="card">
+
+            <h3>Submit Complaint</h3>
+
+            <p>
+                Register your complaint quickly using an easy online form.
+            </p>
+
+        </div>
+
+        <div class="card">
+
+            <h3>Track Status</h3>
+
+            <p>
+                Check whether your complaint is Pending,
+                In Progress or Resolved.
+            </p>
+
+        </div>
+
+        <div class="card">
+
+            <h3>Quick Resolution</h3>
+
+            <p>
+                Complaints can be managed efficiently through the Admin Panel.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- Footer -->
+
+<footer>
+
+    <p>
+        © 2026 Digital Complaint Management System. All Rights Reserved.
+    </p>
+
+</footer>
+
+</body>
+
+</html>
