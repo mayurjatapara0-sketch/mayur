@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: complaint-management-system
+    env: python
+    buildCommand: "./build.sh"
+    startCommand: "gunicorn cms.wsgi:application"
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.13.5
