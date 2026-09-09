@@ -687,4 +687,34 @@ width:100%;
 .home-btn:hover{
     background:#0d47a1;
 }
+/* ===========================
+   TRACK PAGE HEADER & HOME BUTTON
+=========================== */
+
+.page-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:20px;
+}
+
+.page-header h1{
+    margin:0;
+}
+
+.home-btn{
+    display:inline-block;
+    padding:10px 22px;
+    background:#1565c0;
+    color:#ffffff;
+    text-decoration:none;
+    border-radius:8px;
+    font-weight:bold;
+    white-space:nowrap;
+    transition:0.3s;
+}
+
+.home-btn:hover{
+    background:#0d47a1;
+}
    
